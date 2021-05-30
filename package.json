@@ -1,0 +1,14 @@
+{
+  "name": "grpc-nodejs",
+  "version": "1.0.0",
+  "description": "GRPC Server and Client NodeJS",
+  "author": "Álvaro Oliveira",
+  "scripts": {
+    "start:server": "node server",
+    "start:client": "node client"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.3.2",
+    "@grpc/proto-loader": "^0.6.2"
+  }
+}
