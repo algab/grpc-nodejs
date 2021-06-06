@@ -4,11 +4,16 @@
   "description": "GRPC Server and Client NodeJS",
   "author": "Álvaro Oliveira",
   "scripts": {
-    "start:server": "node server",
+    "start:server": "npx nodemon server",
     "start:client": "node client"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.3.2",
-    "@grpc/proto-loader": "^0.6.2"
+    "@grpc/proto-loader": "^0.6.2",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
