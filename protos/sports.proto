@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+service Sports {
+  rpc ListSports(ListSportsRequest) returns (ListSportsResponse) {}
+  rpc SearchSport(SearchSportRequest) returns (SearchSportResponse) {}
+}
+
+message ListSportsRequest {}
+
+message ListSportsResponse {
+  repeated SearchSportResponse data = 1;
+}
+
+message SearchSportRequest {
+  string id = 1;
+}
+
+message SearchSportResponse {
+  message Attributes {
+    string name = 1;
+    string description = 2;
+    string slug = 3;
+    string icon = 4;
+  }
+  int32 id = 1;
+  Attributes attributes = 2;
+}
